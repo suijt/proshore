@@ -19,6 +19,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        $this->app->bind('App\Contracts\AuthInterface', 'App\Repositories\Auth\AuthRepository');
+        $this->app->bind('App\Contracts\QuestionnaireInterface', 'App\Repositories\Questionnaire\QuestionnaireRepository');
     }
 }

@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -185,4 +185,32 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+
+    'privateKey' => <<<'EOD'
+-----BEGIN RSA PRIVATE KEY-----
+MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAL68Nj2qrf5nJzLJ
+SA9yZAY75pQ98fXKNixxnGfptPltdfn6anG7v8dfqejGgJuYtH2ULleMYJTII8gy
+JkStQpr/oOsvTJSHdCz4m/8b58mD/IoxIjD3EBjnJ0vNnWIfGF10FJqGVGnjdGCX
+yglrjRLcP54CTp1d01PfW82fBUhZAgMBAAECgYBvYbuPEV/gA175ol8pXhSZK1vA
+T9g/P2GZXJMIf4rGaayOWTTVy9z3UZ8IJvstYeRsvR6+02QHHkT/AIImcsNEfE3z
+xv/yPTLEKPcww79Ezo5glw/NA5bv3GNbR+BzMjvVf/VNoK3MjGb6oKknl4ClLb/D
+KneJUir4gZKTFvHxHQJBAOASbIECwfqmJn/A9dYcOiUk4sRxMJLR0wS0gkkC/vVe
+iWZWtJIjEmQRR5Qg/l6jwuC1B2p0mLn6DSqpSp8du5MCQQDZ6b9ddyIRzFZULT2n
+25H0ItNXr1XelMtB0hbsUej5gPIYkqRygDmrXVn+t/As/2HMwFDkDLJKwsavfGYb
+E1fjAkEAwSkgwFZQQnLY3WjKhDjxJvQVSKMK7IZVEslJRwd+IqfMapx0LUZupDUB
+L4EBxzQE2xEzw2GgBzK4Bv7JhUFsYQJBAMROlc0+SFveR5r3UobH/7j+MoPYeTPV
+uTGncG0d8RHrvqyyViCsMMeWhj84Ns5ilhkc2wJGCcvdoZ1vJJCZoV8CQEiowxPG
+BnRdsJwskJYIlyN6znNbFSAc0PEDslTftSmLANm7/RLl3j7bndDeXPXPty5TRruQ
++kT93iF6PQGt1wE=
+-----END RSA PRIVATE KEY-----
+EOD,
+
+    'publicKey' => <<<'EOD'
+-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+vDY9qq3+ZycyyUgPcmQGO+aU
+PfH1yjYscZxn6bT5bXX5+mpxu7/HX6noxoCbmLR9lC5XjGCUyCPIMiZErUKa/6Dr
+L0yUh3Qs+Jv/G+fJg/yKMSIw9xAY5ydLzZ1iHxhddBSahlRp43Rgl8oJa40S3D+e
+Ak6dXdNT31vNnwVIWQIDAQAB
+-----END PUBLIC KEY-----
+EOD,
 ];
